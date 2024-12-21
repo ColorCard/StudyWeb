@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 属性</title>
+
+    <style>
+        .block{
+            background-color: aqua;
+            width: 150px;
+            height: 100px;
+        }
+
+        .inline{
+            background-color: brown;
+
+            /*行内元素不能调整宽高*/
+        }
+        .inline-block{
+            width: 100px;
+            height: 150px;
+        }
+
+        .div-inline{
+            display: inline;
+            /*转化块为行内元素*/
+            background-color: blue;
+        }
+
+        .span-inline-block{
+            display: inline-block;
+            background-color: red;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="font: bolder 50px 'Kaiti TC'">这是一个font复合标签</h1>
+    <p style="line-height: 40px">这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本这是一段长文本</p>
+
+    <div class="block">这是一个块级标签</div>
+    <div class="block">这是一个块级标签</div>
+    <span class="inline">这是一个行内元素</span>
+    <span class="inline">这是一个行内元素</span>
+    <img src="img.png" alt="" class="inline-block">
+    <img src="img.png" alt="" class="inline-block">
+    <h2>Display</h2>
+    <div class="div-inline">转化</div>
+    <br>
+    <span class="span-inline-block">这是一个转化为行内快的span</span>
+
+</body>
+</html>
